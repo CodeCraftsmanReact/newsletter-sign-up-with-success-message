@@ -1,38 +1,153 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body{
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+.background{
+  background-color:  hsl(234, 29%, 20%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem;
+  min-height: calc(100vh - 10rem);
+ 
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.page{
+  background-color: #fff;
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+  width: 60%;
+  border-radius: 1rem;
+  color: hsl(234, 29%, 20%);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.checkmark-item-container{
+  display: flex;
+  gap: 1rem;
+  /* margin: 0.7rem 0; */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.form{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  gap: 0.7rem;
+}
+
+button{
+  padding: 1.2rem;
   color: white;
+  background-color: hsl(234, 29%, 20%);
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: 400;
 }
 
-.App-link {
-  color: #61dafb;
+.left-column{
+  width: 50%;
+  padding: 2rem;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.right-column{
+  display: flex;
+  justify-content:end;
+  align-items: center;
+  width: 50%;
+}
+
+input[type='email']{
+  padding: 0.7rem;
+  border: 1px solid hsl(231, 7%, 60%);
+  border-radius: 0.3rem;
+  cursor: pointer;
+}
+
+.heading{
+  font-weight: 700;
+  font-size: 3vw;
+  margin:0;
+}
+
+small{
+  font-weight: 700;
+  margin-bottom: 0.7rem;
+}
+
+.subheading{
+  font-weight: 400;
+  font-size: 1vw;
+}
+
+.checkmark-section{
+  margin-bottom: 2.5rem;
+}
+
+button:hover{
+  cursor: pointer;
+}
+
+button:hover{
+  background: linear-gradient(#fe5278, #ff6a3b);
+  box-shadow: 7px 15px 7px #ff693b49;
+}
+
+.checkmark-text{
+  font-weight: 400;
+}
+
+.r-column-image{
+  width: 100%;
+}
+
+@media only screen and (max-width: 600px ){
+  .page{
+    flex-direction: column-reverse;
+    padding: 0;
+    gap:0;
+    width: 100%;
+    border-radius: 0;
   }
-  to {
-    transform: rotate(360deg);
+  .background{
+    background-color:  #fff;
+    display: inline-block;
+    padding: 0;
+    min-height: unset; 
+  }
+  .right-column{
+    display: block;
+    width: 100%;
+    justify-content: center;
+  }
+  .left-column{
+    width: 100%;
+    padding: 0;
+    display: block;
+  }
+  .r-column-image-mobile{
+    width: 100%;
+    display: block;
+  }
+  .heading{
+    font-size: 8vw;
+  }
+  .subheading{
+    font-size: 4vw;
+  }
+  .checkmark-text{
+    font-size: 5vw;
+  }
+  .checkmark-item-container{
+    margin: 0.3rem 0;
+  }
+  .form{
+    padding: 2rem;
+  }
+  .mobile-padding{
+    padding: 0 1.5rem;
   }
 }
