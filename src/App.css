@@ -14,12 +14,29 @@ body{
  
 }
 
+.icnSuccess-img{
+  margin-bottom: 1rem;
+}
+
+.success-heading{
+  margin-bottom:1rem !important;
+}
+
+.success-subheading{
+  margin-bottom: 2rem;
+}
+
+.dismiss-button{
+  width: 100%;
+}
+
 .page{
   background-color: #fff;
   display: flex;
   gap: 1rem;
-  padding: 1rem;
-  width: 60%;
+  padding: 3rem;
+  width: fit-content;
+  max-width: 800px;
   border-radius: 1rem;
   color: hsl(234, 29%, 20%);
 }
@@ -45,8 +62,13 @@ button{
   font-weight: 400;
 }
 
+.email-label{
+  display: flex;
+  justify-content:space-between;
+}
+
 .left-column{
-  width: 50%;
+  width: 400px;
   padding: 2rem;
   display:flex;
   flex-direction: column;
@@ -64,7 +86,10 @@ input[type='email']{
   padding: 0.7rem;
   border: 1px solid hsl(231, 7%, 60%);
   border-radius: 0.3rem;
-  cursor: pointer;
+}
+
+.success-page{
+  width: 400px;
 }
 
 .heading{
@@ -104,6 +129,16 @@ button:hover{
   width: 100%;
 }
 
+.error-email-label{
+  color: #c46662;
+}
+
+.error-email-input{
+  background-color: #ffe6e6;
+  color: #c46662;
+  outline: #be7f7a auto 1px ;
+}
+
 @media only screen and (max-width: 600px ){
   .page{
     flex-direction: column-reverse;
@@ -133,7 +168,7 @@ button:hover{
     display: block;
   }
   .heading{
-    font-size: 8vw;
+    font-size: 10vw;
   }
   .subheading{
     font-size: 4vw;
@@ -150,4 +185,25 @@ button:hover{
   .mobile-padding{
     padding: 0 1.5rem;
   }
+
+.success-subheading{
+  line-height: 2rem;
+  position: relative;
 }
+
+.dismiss-button{
+  position: absolute;
+  bottom: 2rem;
+  width: calc(100vw - 6rem);
+}
+  .success-page{
+    width:auto;
+    display: flex;
+    flex-direction: column;
+    padding: 7rem 3rem;
+  }
+  .icnSuccess-img{
+    width: 64px;
+    padding-bottom: 3rem;
+  }
+} 
