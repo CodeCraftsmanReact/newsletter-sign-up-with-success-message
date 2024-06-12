@@ -57,12 +57,12 @@ function App() {
         <div className='right-column'>
           <picture>
             <source media='(max-width: 600px)' srcSet={rcimgm} className='r-column-image-mobile'/>
-            <img src={rcimg} className='r-column-image'/>
+            <img src={rcimg} className='r-column-image' alt='decorative image'/>
           </picture>
         </div>
         </>}
        {success && <div className='success-page'>
-        <img src={icnSuccess} className='icnSuccess-img' />
+        <img src={icnSuccess} className='icnSuccess-img' alt='checkmark' />
         <div className='heading success-heading'>Thanks for subscribing!</div>
         <div className='success-subheading'>A confirmation email has been sent to <span style={{fontWeight: 700}}>{email}</span>. Please open it and click the button inside to confirm your subscription.</div>
         <button className='dismiss-button' onClick={() => setSuccess(false)}>Dismiss message</button>
@@ -78,7 +78,7 @@ function CheckmarkItem({ text }){
   return(
     <div className='checkmark-item-container'>
       <div className='checkmark-container'>
-        <img src={chkmrk} className='checkmark'/>
+        <img src={chkmrk} className='checkmark' alt='checkmark'/>
       </div>
       <div className='checkmark-text'>{text}</div>
     </div>

@@ -35,7 +35,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [solution URL](https://your-solution-url.com)
-- Live Site URL: [live site URL](https://your-live-site-url.com)
+- Live Site URL: [live site URL](https://newsletter-sign-up-with-success-message-zeta.vercel.app/)
 
 ## My process
 
